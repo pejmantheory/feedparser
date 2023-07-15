@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: #F8F8F8;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 a {
+    color: #2c87f0;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #666;
+}
+
+small {
+    color: #999;
+}
+
+li {
+    border-bottom: 1px solid #DDD;
+    padding: 20px 0;
+}
+
+li:first-child {
+    padding-top: 0;
+}
+
+li:last-child {
+    border-bottom: none;
+}

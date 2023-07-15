@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>RSS Feed Reader</title>
+</head>
+<body>
+    <h1>RSS Feed Reader</h1>
+    <div class="feed-container">
+        {% for entry in entries %}
+        <div class="feed-entry">
+            <h2><a href="{{ entry.link }}">{{ entry.title }}</a></h2>
+            <p>{{ entry.description }}</p>
+            <p><small>Published on: {{ entry.published }}</small></p>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
